@@ -1,6 +1,11 @@
 import React from "react";
-import { Alert, ImageBackground, StyleSheet, Text, View } from "react-native";
-import { TouchableOpacity } from "react-native-gesture-handler";
+import {
+  ImageBackground,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View
+} from "react-native";
 
 // const onPress = count => {
 //   setCount(count + 1);
@@ -15,7 +20,6 @@ const SplashScreen = props => {
         <TouchableOpacity
           style={styles.button}
           onPress={() => {
-            Alert.alert("working");
             props.navigation.navigate("Home");
           }}
         >

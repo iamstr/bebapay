@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Platform, StyleSheet } from "react-native";
 import { createAppContainer, createSwitchNavigator } from "react-navigation";
 import Homescreen from "./screens/Homescreen";
+import PickBusScreen from "./screens/PickBusScreen";
 import SplashScreen from "./screens/SplashScreen";
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -13,7 +14,8 @@ const AppContainer = createAppContainer(
   createSwitchNavigator(
     {
       Splash: SplashScreen,
-      Home: Homescreen
+      Home: Homescreen,
+      PickBus: PickBusScreen
     },
     {
       initialRouteName: "Splash"

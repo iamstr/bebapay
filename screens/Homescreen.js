@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
   View
 } from "react-native";
+import Buttons from "../components/Buttons";
 import Card from "../components/Card";
 import Date from "../components/Date";
 import Pickers from "../components/Picker";
@@ -161,6 +162,10 @@ class Homescreen extends Component {
                 </TouchableOpacity>
               </View>
             </Switch>
+            <Buttons
+              title="PROCEED TO BOOKING"
+              navigate={this.props.navigation.navigate("PickBus")}
+            />
           </ScrollView>
         </View>
       </View>
