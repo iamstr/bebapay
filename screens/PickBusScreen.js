@@ -42,23 +42,25 @@ export default class PickBusScreen extends Component {
         </View>
         <View style={styles.box}>
           <ScrollView>
-            <TouchableOpacity style={styles.card}>
-              <View style={styles.rounded}>
-                <Image
-                  source={require("../images/bg.jpg")}
-                  style={styles.image}
-                />
-              </View>
+            <View style={styles.container}>
+              <TouchableOpacity style={styles.card}>
+                <View style={styles.rounded}>
+                  <Image
+                    source={require("../images/bg.jpg")}
+                    style={styles.image}
+                  />
+                </View>
 
-              <View>
-                <Text></Text>
-                <Text></Text>
-              </View>
-              <View>
-                <Text></Text>
-                <Text></Text>
-              </View>
-            </TouchableOpacity>
+                <View>
+                  <Text></Text>
+                  <Text></Text>
+                </View>
+                <View>
+                  <Text></Text>
+                  <Text></Text>
+                </View>
+              </TouchableOpacity>
+            </View>
           </ScrollView>
         </View>
       </View>
@@ -187,7 +189,25 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
 
     elevation: 5,
-    borderRadius: 15
+    borderRadius: 25,
+    marginHorizontal: 20,
+    height: 150,
+    zIndex: 3,
+    marginTop: 30
   },
-  rounded: { borderRadius: 25 }
+  rounded: {
+    borderRadius: 50 / 2,
+    overflow: "hidden",
+    height: 50,
+    width: 50,
+    marginTop: 5
+  },
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    flex: 1,
+    justifyContent: "center",
+    width: "100%",
+    marginHorizontal: 10
+  }
 });
