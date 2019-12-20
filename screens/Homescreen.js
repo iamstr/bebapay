@@ -43,7 +43,7 @@ class Homescreen extends Component {
   render() {
     return (
       <View style={styles.root}>
-        <StatusBar backgroundColor="#ff6363" barStyle="light-content" />
+        <StatusBar backgroundColor="#ff3300" barStyle="light-content" />
         <View style={styles.travel}>
           <Text style={styles.search}>Search Buses</Text>
           <View style={styles.detail}>
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flexDirection: "column",
     height: "40%",
-    backgroundColor: "#ff6363",
+    backgroundColor: "#ff3300",
     width: "100%"
   },
   search: { color: "#fff", fontSize: 25, fontWeight: "bold", marginTop: 15 },
